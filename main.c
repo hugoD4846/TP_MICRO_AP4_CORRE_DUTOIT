@@ -81,17 +81,12 @@
 #include <xc.h>
 #include "librairies_utiles/C_Header_Files/general.h"
 #include "librairies_utiles/C_Header_Files/leds.h"
+#include "TP_Chenillard.h"
 
 
 void main(void) {
     Nop();
-    LED0_DIR = OUTP;
-    LED1_DIR = OUTP;
-    LED2_DIR = OUTP;
-    LED3_DIR = OUTP;
-    LED0_STATE = ON;
-    LED1_STATE = ON;
-    LED2_STATE = ON;
-    LED3_STATE = ON;
+    reset();
+    chenillard();
     return;
 }
