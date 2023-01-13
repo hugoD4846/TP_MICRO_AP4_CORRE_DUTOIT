@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>librairies_utiles/C_Header_Files/general.h</itemPath>
       <itemPath>librairies_utiles/C_Header_Files/leds.h</itemPath>
+      <itemPath>TP_Chenillard.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -15,6 +16,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
+      <itemPath>TP_Chenillard.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -38,7 +40,7 @@
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.40</languageToolchainVersion>
-        <platform>2</platform>
+        <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="PIC18F-K_DFP" vendor="Microchip" version="1.7.134"/>
@@ -183,6 +185,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/debug/default/TP_MICRO_AP4_CORRE_DUTOIT_ptg"/>
         <property key="programmerToGoImageName" value="TP_MICRO_AP4_CORRE_DUTOIT_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
@@ -269,7 +273,7 @@
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
         <property key="programmerToGoFilePath"
-                  value="/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/debug/default/TP_MICRO_AP4_CORRE_DUTOIT_ptg"/>
+                  value="D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/debug/default/TP_MICRO_AP4_CORRE_DUTOIT_ptg"/>
         <property key="programmerToGoImageName" value="TP_MICRO_AP4_CORRE_DUTOIT_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
