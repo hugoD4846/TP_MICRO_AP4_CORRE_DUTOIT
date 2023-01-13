@@ -6,15 +6,18 @@
             <name>TP_MICRO_AP4_CORRE_DUTOIT</name>
             <creation-uuid>f0e88213-2392-40a7-b266-92ce38057e27</creation-uuid>
             <make-project-type>0</make-project-type>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>../../Téléchargements/librairies_utiles/C_Header_Files</sourceRootElem>
+                <sourceRootElem>../../Téléchargements/librairies_utiles/C_Source_Files</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>default</name>
                     <type>2</type>
                 </confElem>
             </confList>
-            <sourceEncoding>ISO-8859-1</sourceEncoding>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>
             </formatting>
