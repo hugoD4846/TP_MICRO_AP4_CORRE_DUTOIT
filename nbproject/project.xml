@@ -11,6 +11,7 @@
             <sourceRootList>
                 <sourceRootElem>../../Téléchargements/librairies_utiles/C_Header_Files</sourceRootElem>
                 <sourceRootElem>../../Téléchargements/librairies_utiles/C_Source_Files</sourceRootElem>
+                <sourceRootElem>.</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
