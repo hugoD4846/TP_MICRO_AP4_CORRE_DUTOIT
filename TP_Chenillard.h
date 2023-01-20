@@ -14,6 +14,7 @@ extern "C" {
 
 
 void chenillard();
+void chenillardWithTimer0();
 void reset();
 
 #ifdef	__cplusplus

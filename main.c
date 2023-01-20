@@ -87,6 +87,6 @@
 void main(void) {
     Nop();
     reset();
-    chenillard();
+    chenillardWithTimer0();
     return;
 }
