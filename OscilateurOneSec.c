@@ -35,3 +35,7 @@ void waitOneSec()
     while(INTCONbits.TMR0IF!=1);
     INTCONbits.TMR0IF=0;
 }
+
+void toogleTimer(){
+    T0CONbits.TMR0ON=!T0CONbits.TMR0ON;
+}

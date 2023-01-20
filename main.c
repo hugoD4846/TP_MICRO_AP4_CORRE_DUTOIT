@@ -82,11 +82,12 @@
 #include "librairies_utiles/C_Header_Files/general.h"
 #include "librairies_utiles/C_Header_Files/leds.h"
 #include "TP_Chenillard.h"
+#include "TP_Chenillard_interruption.h"
 
 
 void main(void) {
     Nop();
-    reset();
-    chenillardWithTimer0();
+    resetBtn();
+    load_chenillard();
     return;
 }

@@ -21,6 +21,16 @@ void chenillard(){
     }
 }
 
+void chenillardWithTimer0Btn(){
+    configTimer0();
+    TRISB = 0x01;
+    LATB = 0x02;
+    for(int i=0;i<3;i++){
+        waitOneSec();
+        LATB = LATB << 1;
+    }
+}
+
 void chenillardWithTimer0(){
     configTimer0();
     TRISB = 0x00;
@@ -29,6 +39,11 @@ void chenillardWithTimer0(){
         waitOneSec();
         LATB = LATB << 1;
     }
+}
+
+void resetBtn(){
+    TRISB = 0x01;
+    LATB = 0x01;
 }
 
 void reset(){

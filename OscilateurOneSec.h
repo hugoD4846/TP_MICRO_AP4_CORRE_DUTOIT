@@ -17,7 +17,7 @@ void startTimer0();
 void stopTimer0();
 void resetTimer0();
 void waitOneSec();
-
+void toogleTimer();
 
 #ifdef	__cplusplus
 }

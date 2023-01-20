@@ -8,6 +8,8 @@
       <itemPath>librairies_utiles/C_Header_Files/leds.h</itemPath>
       <itemPath>TP_Chenillard.h</itemPath>
       <itemPath>OscilateurOneSec.h</itemPath>
+      <itemPath>TP_Chenillard_interruption.h</itemPath>
+      <itemPath>btnInit.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -19,6 +21,8 @@
       <itemPath>main.c</itemPath>
       <itemPath>TP_Chenillard.c</itemPath>
       <itemPath>OscilateurOneSec.c</itemPath>
+      <itemPath>TP_Chenillard_interruption.c</itemPath>
+      <itemPath>btnInit.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -42,7 +46,7 @@
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.40</languageToolchainVersion>
-        <platform>2</platform>
+        <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="PIC18F-K_DFP" vendor="Microchip" version="1.7.134"/>
@@ -258,7 +262,7 @@
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="true"/>
         <property key="freeze.timers" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
