@@ -83,11 +83,12 @@
 #include "librairies_utiles/C_Header_Files/leds.h"
 #include "TP_Chenillard.h"
 #include "TP_Chenillard_interruption.h"
-
+#include "TP_Buzzer_PWM.h"
 
 void main(void) {
     Nop();
-    resetBtn();
-    load_chenillard();
+    test();
+    //resetBtn();
+    //load_chenillard();
     return;
 }

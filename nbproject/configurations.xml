@@ -10,6 +10,7 @@
       <itemPath>OscilateurOneSec.h</itemPath>
       <itemPath>TP_Chenillard_interruption.h</itemPath>
       <itemPath>btnInit.h</itemPath>
+      <itemPath>TP_Buzzer_PWM.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -23,6 +24,7 @@
       <itemPath>OscilateurOneSec.c</itemPath>
       <itemPath>TP_Chenillard_interruption.c</itemPath>
       <itemPath>btnInit.c</itemPath>
+      <itemPath>TP_Buzzer_PWM.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

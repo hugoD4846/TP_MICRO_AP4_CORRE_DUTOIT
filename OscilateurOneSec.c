@@ -17,7 +17,7 @@ void startTimer0()
 
 void stopTimer0()
 {
-    T0CONbits.TMR0ON=1;
+    T0CONbits.TMR0ON=0;
 }
 
 void resetTimer0()
