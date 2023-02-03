@@ -10,6 +10,7 @@
       <itemPath>OscilateurOneSec.h</itemPath>
       <itemPath>TP_Chenillard_interruption.h</itemPath>
       <itemPath>btnInit.h</itemPath>
+<<<<<<< Updated upstream
       <itemPath>TP_Buzzer_PWM.h</itemPath>
       <itemPath>TP_voltmetre.h</itemPath>
       <itemPath>librairies_utiles/C_Header_Files/lcd.h</itemPath>
@@ -26,6 +27,7 @@
       <itemPath>OscilateurOneSec.c</itemPath>
       <itemPath>TP_Chenillard_interruption.c</itemPath>
       <itemPath>btnInit.c</itemPath>
+<<<<<<< Updated upstream
       <itemPath>TP_Buzzer_PWM.c</itemPath>
       <itemPath>TP_voltmetre.c</itemPath>
       <itemPath>librairies_utiles/C_Source_Files/lcd.c</itemPath>
@@ -268,7 +270,7 @@
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
-        <property key="debugoptions.useswbreakpoints" value="true"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="freeze.timers" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
