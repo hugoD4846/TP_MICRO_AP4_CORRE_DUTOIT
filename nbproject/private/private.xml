@@ -3,17 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/TP_Chenillard_interruption.c</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/OscilateurOneSec.c</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/btnInit.c</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/main.c</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/librairies_utiles/C_Header_Files/leds.h</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/btnInit.h</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/TP_Chenillard.c</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/OscilateurOneSec.h</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/TP_Chenillard.h</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/librairies_utiles/C_Header_Files/general.h</file>
-            <file>file:/D:/ISEN/AP4/microcontroleur/TP_MICRO_AP4_CORRE_DUTOIT/TP_Chenillard_interruption.h</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/TP_Chenillard.c</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/librairies_utiles/C_Source_Files/lcd.c</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/OscilateurOneSec.c</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/TP_Chenillard.h</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/librairies_utiles/C_Header_Files/general.h</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/librairies_utiles/C_Header_Files/leds.h</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/main.c</file>
+            <file>file:/home/hdutoit/MPLABXProjects/TP_MICRO_AP4_CORRE_DUTOIT.X/OscilateurOneSec.h</file>
         </group>
     </open-files>
 </project-private>
