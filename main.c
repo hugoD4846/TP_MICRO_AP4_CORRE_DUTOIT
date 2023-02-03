@@ -84,10 +84,13 @@
 #include "TP_Chenillard.h"
 #include "TP_Chenillard_interruption.h"
 #include "TP_Buzzer_PWM.h"
+#include "TP_voltmetre.h"
 
 void main(void) {
     Nop();
-    test();
+    //buzzer();
+    //hello_world();
+    voltmetre();
     //resetBtn();
     //load_chenillard();
     return;

@@ -5,11 +5,12 @@
 #include "OscilateurOneSec.h"
 #define _XTAL_FREQ 1000000
 
-void test() {
+void buzzer() {
     // Initialisation des registres
     int freq1 = 55;
     int freq2 = 1760;
-        configTimer0();
+    
+    configTimer0();
 
     T2CON = 0x00; // Configure le timer 2 sans prescaler ni postscaler
     CCP1CON = 0x0C; // Configure le mode PWM et les deux bits<1 :0> du rapport cyclique

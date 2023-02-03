@@ -13,7 +13,7 @@ extern "C" {
 #endif
 
 
-void test();
+void buzzer();
 
 #ifdef	__cplusplus
 }
