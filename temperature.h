@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-void i2c_send_command(unsigned char slave_address, unsigned char command);
+void displayTemperature();
 
 
 #ifdef	__cplusplus

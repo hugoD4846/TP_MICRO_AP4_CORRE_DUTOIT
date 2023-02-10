@@ -85,12 +85,14 @@
 #include "TP_Chenillard_interruption.h"
 #include "TP_Buzzer_PWM.h"
 #include "TP_voltmetre.h"
+#include "temperature.h"
 
 void main(void) {
     Nop();
     //buzzer();
     //hello_world();
-    voltmetre();
+    //voltmetre();
+    displayTemperature();
     //resetBtn();
     //load_chenillard();
     return;

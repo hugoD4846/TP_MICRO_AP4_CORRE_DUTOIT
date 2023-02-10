@@ -14,6 +14,7 @@
       <itemPath>TP_voltmetre.h</itemPath>
       <itemPath>librairies_utiles/C_Header_Files/lcd.h</itemPath>
       <itemPath>temperature.h</itemPath>
+      <itemPath>librairies_utiles/C_Header_Files/i2c.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -31,6 +32,7 @@
       <itemPath>TP_voltmetre.c</itemPath>
       <itemPath>librairies_utiles/C_Source_Files/lcd.c</itemPath>
       <itemPath>temperature.c</itemPath>
+      <itemPath>librairies_utiles/C_Source_Files/i2c.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

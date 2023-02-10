@@ -1,43 +1,42 @@
 #include <xc.h>
-#include "temperature.h"
+#include <htc.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "OscilateurOneSec.h"
+#include "./librairies_utiles/C_Header_Files/general.h"
+#include "./librairies_utiles/C_Header_Files/lcd.h"
+#include "./librairies_utiles/C_Header_Files/i2c.h"
 
-void i2c_send_command(unsigned char slave_address, unsigned char command) {
-  // Step 1: Start condition
-  SSP1CON2bits.SEN = 1;
-  while (SSP1CON2bits.SEN);
 
-  // Step 2: Send slave address
-  SSP1BUF = slave_address;
-  while (SSP1STATbits.BF || SSP1STATbits.R_W);
+#define TEMP_SENSOR_ADDRESS 0b10011010
+int temperature;
+void displayTemperature() {
+    configTimer0();
+    TRISA = 0xFF;
+    TRISB = 0x00;
+    TRISC = 0x00;
+    
+    LCDInit();
+    LCDClear();
+    i2c_init();
 
-  // Step 3: Send command
-  SSP1BUF = command;
-  while (SSP1STATbits.BF || SSP1STATbits.R_W);
+    while (1) {
+        i2c_start();
+        i2c_write(TEMP_SENSOR_ADDRESS | 0);
+        i2c_write(0x00);
+        i2c_stop();
 
-  // Step 4: Repeated start condition
-  SSP1CON2bits.RSEN = 1;
-  while (SSP1CON2bits.RSEN);
+        i2c_start();
+        i2c_write(TEMP_SENSOR_ADDRESS | 1);
+        
 
-  // Step 5: Send slave address
-  SSP1BUF = slave_address;
-  while (SSP1STATbits.BF || SSP1STATbits.R_W);
-
-  // Step 6: Listen for slave response
-  SSP1CON2bits.RCEN = 1;
-  while (!SSP1STATbits.BF);
-
-  // Step 7: Send acknowledge/non-acknowledge
-  if (more_data_to_receive) {
-    SSP1CON2bits.ACKDT = 0;
-  } else {
-    SSP1CON2bits.ACKDT = 1;
-  }
-  SSP1CON2bits.ACKEN = 1;
-  while (SSP1CON2bits.ACKEN);
-
-  // Step 8: Repeat steps 4 to 7 if necessary
-
-  // Step 9: Stop condition
-  SSP1CON2bits.PEN = 1;
-  while (SSP1CON2bits.PEN);
+        temperature = abs(i2c_read());
+        i2c_NAK();
+        i2c_stop();
+       
+        LCDWriteInt(0,0,temperature);
+        LCDWriteStr("Degres");
+        waitOneSec();
+    }
 }
