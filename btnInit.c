@@ -3,26 +3,24 @@
 #include "btnInit.h"
 #include "OscilateurOneSec.h"
 
-void configurationInterruption(){
-    GIEH = 1;
-    GIE = 1;
-    INTCONbits.INT0IF = 0; // RÈinitialiser le drapeau d'interruption INT0
-    INTCONbits.INT0IE = 1; // Activer l'interruption INT0
-    INTCON2bits.INTEDG0 = 0; // DÈclenchement sur front montant
-    RBPU = 0;
-    TRISBbits.TRISB0 = INPUT;
+// Fonction pour configurer les interruptions externes
+void configurationInterruption()
+{
+    GIEH = 1;                 // Active les interruptions hautes
+    GIE = 1;                  // Active toutes les interruptions
+    INTCONbits.INT0IF = 0;    // R√©initialise le flag d'interruption pour l'INT0
+    INTCONbits.INT0IE = 1;    // Active l'interruption pour l'INT0
+    INTCON2bits.INTEDG0 = 0;  // Configure la transition sur laquelle l'interruption sera d√©clench√©e
+    RBPU = 0;                 // Active les r√©sistances de tirage sur les broches d'entr√©e
+    TRISBbits.TRISB0 = INPUT; // Configure la broche RB0 comme entr√©e
 }
 
-
-void __interrupt(high_priority) externalInterrupt()
+// Fonction d'interruption externe
+void __interrupt(low_priority) externalInterrupt()
 {
-    // Code ‡ exÈcuter lorsque l'interruption externe se produit
-    // Par exemple, pour incrÈmenter un compteur
-
-    if (INTCONbits.INT0IF == 1) {
-        toogleTimer();
-        INTCONbits.INT0IF = 0;
+    if (INTCONbits.INT0IF == 1) // V√©rifie si l'interruption pour l'INT0 est en attente
+    {
+        toogleTimer();         // Appelle la fonction toogleTimer() pour changer l'√©tat d'un timer
+        INTCONbits.INT0IF = 0; // R√©initialise le flag d'interruption pour l'INT0
     }
 }
-
-

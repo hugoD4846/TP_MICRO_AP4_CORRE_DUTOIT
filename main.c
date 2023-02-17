@@ -86,14 +86,44 @@
 #include "TP_Buzzer_PWM.h"
 #include "TP_voltmetre.h"
 #include "temperature.h"
+#include "TP_uart.h"
+#include "./librairies_utiles/C_Header_Files/uart.h"
+#include "./librairies_utiles/C_Header_Files/lcd.h"
 
 void main(void) {
     Nop();
     //buzzer();
     //hello_world();
     //voltmetre();
-    displayTemperature();
+    //displayTemperature();
+    TP_uart();
     //resetBtn();
     //load_chenillard();
     return;
+}
+
+void __interrupt(high_priority) SerialRxPinInterrupt()
+{
+
+    if (PIR1bits.RCIF == 1)
+    { // check if the interrupt is caused by RX pin
+
+        if (RCSTA1bits.FERR)
+        {
+            LCDGoto(0, 1);
+            LCDWriteStr("Framing Error");
+            exit(EXIT_FAILURE);
+        }
+        else if (RCSTA1bits.OERR)
+        {
+            LCDGoto(0, 1);
+            LCDWriteStr("Overrun Error");
+            exit(EXIT_FAILURE);
+        }
+        else
+        {
+            LCDPutChar(UARTReadByte()); // display the received character
+            // PIR1bits.RCIF = 0;              // clear rx flag - useless: flag RCIF is cleared when RX buffer is read
+        }
+    }
 }
